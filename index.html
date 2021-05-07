@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="app.css"rel="stylesheet"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            
+ 
+        <ul id="main-menu">
+                
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Key Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Testiminial</a></li>
+                <li><a href="#">FAQ</a></li>
+        </ul>
+                 
+           
+            
+  <div class="slideshow-container">
+                
+                
+
+  <div class="mySlides fade">
+  <div class="numbertext">
+                <p>There is no other</p>
+                <p>platforms for you as like</p>
+                <a class="bigb" href="#">TRY NOW</a>
+  </div>
+  <img src="images/bg.jpg" style="width:100%">
+      
+   
+  </div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">
+                <p>There is no other</p>
+                <p>platforms for you as like</p>
+                <a class="bigb" href="#">TRY NOW</a>
+  </div>
+  <img src="images/ba.jpg"  style="width:100%">
+   
+  </div>
+
+  <div class="mySlides fade">
+  <div class="numbertext">
+                <p>There is no other</p>
+                <p>platforms for you as like</p>
+                <a class="bigb" href="#">TRY NOW</a>
+  </div>
+  <img src="images/bb.jpg" style="width:100%">
+   
+  </div>
+
+ 
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+            
+<script>
+            
+var slideIndex = 1;
+showSlides(slideIndex);
+
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    
+</script>
+
+</div>
+</header>
+   <div id="third">
+      
+        <h6>LOVE WHAT YOU DO, AND YOU'LL DO IT WELL</h6>
+        <div class="four-images">
+            
+            <div>
+                <a href="/"class="space"><img src="pc.svg"  ></a>
+                <p class="pf">DIGITAL DESIGN</p>
+                <a class="line"><svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-3 -11H21V13H-3V-11Z" fill="#BF0A30" />
+                </svg></a>
+                <p class="ts">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+             
+
+            </div>
+            <div>
+                <a href="/"class="space"><img src="icon23.svg"  ></a>
+                <p class="pf">WEB DEVELOPMENT</p>
+                <a class="line"><svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-3 -11H21V13H-3V-11Z" fill="#BF0A30" />
+                </svg></a>
+                <p class="ts">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+                
+            </div>
+            <div>
+                <a href="/"class="space"><img src="heard.svg"  ></a>
+                <p class="pf">WE LOVE YOU</p>
+                <a class="line"><svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-3 -11H21V13H-3V-11Z" fill="#BF0A30" />
+                </svg></a>
+                <p class="ts">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolor.</p>
+              
+            </div>
+         
+        </div>
+
+</div>
+        
+<div id="fourth">
+        
+<h2>SUBSCRIBE TO STAY IN THE LOOP</h2>
+
+  <form id="forma" action="mailto:someone@example.com" method="post" enctype="text/plain">
+  <input type="text" name="mail">
+  <input type="submit" value="Send">
+</form>
+</div>
+
+
+<div id="fifth">
+
+      
+     
+
+<a class="social"><img src="social.svg" alt="Logo" /></a>
+
+            <nav id="mainf">
+                <ul id="main-footer">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Key Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Testiminial</a></li>
+                <li><a href="#">FAQ</a></li>
+                  
+                </ul>
+            </nav>
+ 
+
+      
+        
+</div>
+
+</body>
+</html>
